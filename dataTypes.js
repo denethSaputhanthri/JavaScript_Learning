@@ -1,24 +1,3 @@
-console.log("js Loaded..!");
-
-
- let a = function f(){
-    return "Hello World";
- }
- //console.log(a());
-
-const a = { name: "John", age: 30, city: "New York" };
-a.name = "Jane"; // Non-primitive data types are mutable, so we can change the properties of the object even if it is declared with const.
-console.log(a.name); // Output: Jane
-
-let a = 4;
-let b = a;
-b = 5;
-console.log(a); // Output: 4, 
-// because a and b are primitive data types, so they are stored in different memory locations. 
-// When we assign a to b, we are copying the value of a to b, so they are independent of each other.
-console.log(b); // Output: 5, 
-// because we changed the value of b, but it does not affect a.
-
 # Non-primitive data types are stored in the heap memory, and they are accessed by reference.
 
 const a = { name: "John", age: 30, city: "New York" };
