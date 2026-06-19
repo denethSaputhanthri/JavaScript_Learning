@@ -1,4 +1,4 @@
-# Non-primitive data types are stored in the heap memory, and they are accessed by reference.
+// Non-primitive data types are stored in the heap memory, and they are accessed by reference.
 
 const a = { name: "John", age: 30, city: "New York" };
 const b = a;

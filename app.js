@@ -19,7 +19,7 @@ console.log(a); // Output: 4,
 console.log(b); // Output: 5, 
 // because we changed the value of b, but it does not affect a.
 
-# Non-primitive data types are stored in the heap memory, and they are accessed by reference.
+// Non-primitive data types are stored in the heap memory, and they are accessed by reference.
 
 const a = { name: "John", age: 30, city: "New York" };
 const b = a;

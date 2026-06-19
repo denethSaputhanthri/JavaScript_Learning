@@ -51,7 +51,7 @@ const findLastIndex = fruits.findLastIndex(fruit => fruit === "orange");
 // This will return the index of the last element in the fruits array that satisfies the condition, which is 4.
 console.log(findLastIndex); // Output: 4    
 
-sort and toSorted VS reverse and toReversed
+//sort and toSorted VS reverse and toReversed
 
 
 const numbers = [3, 1, 4, 1, 5, 9];
