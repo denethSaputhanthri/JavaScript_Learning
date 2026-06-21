@@ -60,3 +60,17 @@ const test = (...args) => {
     console.log(arg1, arg2); // Outputs: "Hello" "World"
 }
 test("Hello", "World"); 
+
+
+const button = document.getElementById('myButton');
+
+button.addEventListener('click', () => {
+     alert('Button was clicked!');
+});
+
+///////////////////////
+button.addEventListener('click',showAlert);
+
+function showAlert() {
+    alert('Button was clicked!');
+}
