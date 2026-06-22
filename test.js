@@ -1,26 +1,10 @@
+const numbers = [1, 2, 3, 4, 5];
+const newNumbers = [];
 
-const button = document.getElementById('myButton');
-
-button.addEventListener('click', () => {
-     alert('Button was clicked!');
-});
-
-///////////////////////
-button.addEventListener('click',showAlert);
-
-function showAlert() {
-    alert('Button was clicked!');
+for (let i = 0; i < numbers.length; i++) {
+     newNumbers.push(numbers[i] * 10);
 }
+console.log(newNumbers); // Output: [10, 20, 30, 40, 50]
 
-const user = {
-    name : "deneth",
-    password : "#-fvkfsvojfv",
-    address : "beruwala",
-    age : 20
-};
-
-localStorage.setItem("USERS",JSON.stringify(user))
-
-const userFormStorage = localStorage.getItem("USERS");
-
-console.log(JSON.parse(userFormStorage));
+const add = numbers.map(x=> x*20);
+console.log(add); // Output: [20, 40, 60, 80, 100]

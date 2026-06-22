@@ -71,3 +71,11 @@ localStorage.setItem("USERS",JSON.stringify(user))
 const userFormStorage = localStorage.getItem("USERS");
 
 console.log(JSON.parse(userFormStorage)); 
+
+
+const apiUrl = "https://api.restful-api.dev/objects";
+
+fetch(apiUrl)
+.then(response => console.log(response))
+.then(data => console.log(data))
+.catch(error => console.error("Error fetching data:", error));
