@@ -18,6 +18,10 @@ console.log(newFruits1); // Output: [{name: "Banana", length: 6, price: 25}, {na
 
 const  numbers = [3, 1, 4, 1, 5, 9];
 
+const heloow = numbers.map(v => `H1${v}`).join(", ");
+// This will return a new array with the elements transformed by the function, and then join them into a string with ", " as separator.
+console.log(heloow); // Output: "H13, H11, H14, H11, H15, H19"
+
 const newNumbers1 = numbers.flatMap(x => [x, x * 2]); // This will return a new array with the elements transformed by the function,
 console.log(newNumbers1); // Output: [3, 6, 1, 2, 4, 8, 1, 2, 5, 10, 9, 18]
 
