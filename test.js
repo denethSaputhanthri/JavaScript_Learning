@@ -1,14 +1,29 @@
-console.log("Hello World");
+class Stack{
+  constructor(){
+    this.customers = [];
+  }
 
-const arrayNumbers = [];
+  Push(customer){
+    this.customers.push(customer);
+  }
+  Pop(){
+    return this.customers.pop();
+    
+  }
+  Print(){
+    return console.log(this.customers.join(" <- "));
+  }
 
-const myObject = {
-  name: "John",
-  age: 30,
-  city: "New York"
-};
+}
 
-arrayNumbers.push(myObject);
-
-console.log(arrayNumbers.entries().next().value); // Output: [0, { name: "John", age: 30, city: "New York" }]
-
+const inStack = new Stack();
+inStack.Push("AA");
+inStack.Push("BB");
+inStack.Push("CC");
+inStack.Print();
+inStack.Pop(); 
+inStack.Push("DD");
+inStack.Push("EE");
+inStack.Print();
+inStack.Pop();
+inStack.Print();
